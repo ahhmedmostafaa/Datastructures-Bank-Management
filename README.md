@@ -29,8 +29,3 @@ Each version is a self-contained Visual Studio project:
 g++ oop-version/"datastructure project 1.cpp" -o bank_oop
 g++ function-based-version/"datastructure project.cpp" -o bank_functional
 ```
-
-## Roadmap
-- [ ] Add file persistence (save/load data between runs)
-- [ ] Replace manual linked list with a templated generic version reusable for both entities
-- [ ] Add input validation and duplicate-ID checks
