@@ -1,8 +1,25 @@
-# Bank Management System — Linked List Implementation (C++)
+# Bank Management System — From UML Design to Linked List Implementation
 
-A bank management system implemented as a **singly linked list** data structure, built in two different architectural styles to compare design approaches for the same problem.
+A complete software development cycle for a bank management system: full **UML system analysis & design**, followed by **two independent C++ implementations** using singly linked lists, built to compare architectural approaches to the same problem.
 
-## Two Versions, One Data Structure
+## Project Structure
+
+```
+design/                      # System analysis & design (UML)
+oop-version/                 # Implementation 1 — object-oriented
+function-based-version/      # Implementation 2 — procedural
+```
+
+## 1. System Design (`design/`)
+Full UML modeling of the system before implementation:
+- Class Diagram
+- Use Case Diagram
+- Activity Diagrams (x2)
+- Sequence Diagrams (x4)
+- Data Flow Diagram (DFD)
+- Full design documentation (`Bank management system.pdf`)
+
+## 2. Implementation — Two Versions, One Data Structure
 
 | | `oop-version/` | `function-based-version/` |
 |---|---|---|
@@ -12,7 +29,7 @@ A bank management system implemented as a **singly linked list** data structure,
 
 Both implementations manage two linked lists — **Branches** and **Account Holders** — using dynamic node allocation (`new`) and manual pointer traversal, without relying on the STL (`std::list`).
 
-## Core Data Structure Operations Demonstrated
+### Core Data Structure Operations Demonstrated
 - Insertion at head (O(1))
 - Linear traversal for display (O(n))
 - Linear search by ID/name (O(n))
@@ -21,6 +38,7 @@ Both implementations manage two linked lists — **Branches** and **Account Hold
 ## Tech Stack
 - C++
 - Visual Studio project files (.sln / .vcxproj)
+- UML modeling
 
 ## How to Run
 Each version is a self-contained Visual Studio project:
